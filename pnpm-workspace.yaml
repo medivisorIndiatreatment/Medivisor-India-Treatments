@@ -44,3 +44,6 @@ minimumReleaseAgeExclude:
   - next@16.4.4
   - tailwindcss@4.3.4
   - vitest@5.1.0
+
+packages:
+  - "."
