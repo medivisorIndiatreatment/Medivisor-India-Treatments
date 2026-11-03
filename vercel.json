@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json.schemastore.org/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install --legacy-peer-deps",
+  "regions": [
+    "bom1"
+  ],
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "https://medivisorindiatreatment.com",
+    "NEXT_PUBLIC_WIX_CLIENT_ID": "f7936da5-2407-4431-ae76-39b86f3f4f3e",
+    "EMAIL_FROM": "Medivisor India Treatment <noreply@noreply.medivisorhealth.com>",
+    "EMAIL_TO": "info@medivisorhealth.com",
+    "NODE_OPTIONS": "--max-old-space-size=768 --expose-gc"
+  },
+  "functions": {
+    "app/api/**/*": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "app/page": {
+      "memory": 1024
+    },
+    "app/**/page": {
+      "memory": 1024
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    }
+  ]
+}

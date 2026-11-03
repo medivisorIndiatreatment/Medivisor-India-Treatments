@@ -1,0 +1,25 @@
+# Ensure consistent line endings across platforms
+* text=auto eol=lf
+
+# Large JSON files should not be tracked in git
+*.json linguist-generated
+
+# Node.js specific
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+pnpm-lock.yaml text eol=lf
+
+# Configuration files
+.env* text eol=lf
+.config/** text eol=lf
+.kilo/** text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+Dockerfile text eol=lf
+docker-compose*.yml text eol=lf
+
+# Markdown
+*.md text eol=lf
