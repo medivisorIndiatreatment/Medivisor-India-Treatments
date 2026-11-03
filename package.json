@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "pnpm exec next dev",
-    "build": "pnpm exec next build",
-    "build:static": "pnpm exec next build",
-    "start": "pnpm exec next start",
+    "build": "next build",
+    "build:static": "next build",
+    "start": "next start",
     "start:next": "pnpm exec next start",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
