@@ -75,7 +75,7 @@
     "tailwind-merge": "^3.7.0",
     "tailwindcss": "^4.3.4",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "7.0.2",
+    "typescript": "^5.8.2",
     "vaul": "^1.1.2"
   },
   "pnpm": {
@@ -92,7 +92,7 @@
     "@types/react": "19.3.0",
     "@typescript-eslint/eslint-plugin": "^8.72.1",
     "@typescript-eslint/parser": "^8.72.1",
-    "eslint": "^10.14.0",
+    "eslint": "^9.30.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
